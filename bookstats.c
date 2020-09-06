@@ -8,7 +8,7 @@
 #include "bookstats.h"
 #include "string.h"
 #include "queue.h"
-#include "statistics.h"
+#include "statistics.h" 
 #include "line.h"
 
 /**
@@ -127,7 +127,7 @@ int main(int argc, char* argv[])
 	}
 	
 	// release semaphore
-	sem_close(&queue_semaphore);
+	sem_close(&semaphore);
 	
 	release_queue(&queue); // release queue
 	print_statistics(&sum_stats); // print stats to screen

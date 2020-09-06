@@ -1,5 +1,5 @@
 bookstats: string.o statistics.o queue.o line.o bookstats.o
-	gcc -o bookstats -std=c11 -Wall -ggdb3 bookstats.o queue.o statistics.o string.o line.o -lpthread
+	gcc -o bookstats -std=c17 bookstats.o queue.o statistics.o string.o line.o -lpthread
 	
 string.o:
 	gcc -c string.c
